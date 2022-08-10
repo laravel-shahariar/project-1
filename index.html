@@ -10,18 +10,7 @@
 </head>
 
 <body>
-    <div id="show" style="color:black;position:fixed;left:10%;top:20%;width:120px;background:whitesmoke; z-index:1;border:2px solid gray;padding:10px;border-radius:10px">
-    </div>
-    <script>
-        let a = `Height: ${window.innerHeight} <br/> Width: ${window.innerWidth}`;
-        document.querySelector("#show").innerHTML = a + "<br/> Scroll: 0";
-        window.addEventListener("scroll", () => {
-            a = `Height: ${window.innerHeight} <br/> Width: ${window.innerWidth}`;
-            document.querySelector("#show").innerHTML = a + "<br/> Scroll: " + window.scrollY;
-        });
-    </script>
-
-    <header>
+   <header>
         <div class="width">
             <div>
                 <h1><a href=""><span>Website</span> <span>Name</span></a></h1>

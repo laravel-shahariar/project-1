@@ -1,0 +1,302 @@
+<html>
+
+<head>
+    <!-- Bootstrap Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="show" style="color:black;position:fixed;left:10%;top:20%;width:120px;background:whitesmoke; z-index:1;border:2px solid gray;padding:10px;border-radius:10px">
+    </div>
+    <script>
+        let a = `Height: ${window.innerHeight} <br/> Width: ${window.innerWidth}`;
+        document.querySelector("#show").innerHTML = a + "<br/> Scroll: 0";
+        window.addEventListener("scroll", () => {
+            a = `Height: ${window.innerHeight} <br/> Width: ${window.innerWidth}`;
+            document.querySelector("#show").innerHTML = a + "<br/> Scroll: " + window.scrollY;
+        });
+    </script>
+
+    <header>
+        <div class="width">
+            <div>
+                <h1><a href=""><span>Website</span> <span>Name</span></a></h1>
+                <div class="menu-controlar"><i class="bi bi-list"></i></div>
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#course">Courses</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                        <li><a href="#success">Success</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="#register">Register</a></li>
+                    </ul>
+                </div>
+                <div class="reg"><button><a href="">Register</a></button></div>
+            </div>
+        </div>
+    </header>
+    <div class="width">
+        <section class="main-photo-slide">
+            <div class="slide">
+                <div class="photo"><img src="../Image/photo00.jpg" /></div>
+                <div>
+                    <h2>Get Started Digital Learning</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <button><a href='#'>Get Started</a></button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="photo"><img src="../Image/photo01.jpg" /></div>
+                <div>
+                    <h2>Get Started Digital Learning</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <button><a href='#'>Get Started</a></button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="photo"><img src="../Image/photo02.jpg" /></div>
+                <div>
+                    <h2>Get Started Digital Learning</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <button><a href='#'>Get Started</a></button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="photo"><img src="../Image/photo03.jpg" /></div>
+                <div>
+                    <h2>Get Started Digital Learning</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <button><a href='#'>Get Started</a></button>
+                </div>
+            </div>
+            <div>
+                <span class="left"><i class="bi bi-chevron-left"></i></span>
+                <span class="right"><i class="bi bi-chevron-right"></i></span>
+            </div>
+        </section>
+    </div>
+    <section class="width courses" id="course">
+        <h2>Discover Our Popular Courses</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <div class="container">
+            <div class="course">
+                <div class="photo"><img src="../Image/photo00.jpg" alt="" title="" /></div>
+                <div class="detail">
+                    <h3>This is h3 tag for course</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable</p>
+                    <span>Price : 333$</span>
+                </div>
+            </div>
+            <div class="course">
+                <div class="photo"><img src="../Image/photo01.jpg" alt="" title="" /></div>
+                <div class="detail">
+                    <h3>This is h3 tag for course</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable</p>
+                    <span>Price : 333$</span>
+                </div>
+            </div>
+            <div class="course">
+                <div class="photo"><img src="../Image/photo02.jpg" alt="" title="" /></div>
+                <div class="detail">
+                    <h3>This is h3 tag for course</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable</p>
+                    <span>Price : 333$</span>
+                </div>
+            </div>
+            <div class="course">
+                <div class="photo"><img src="../Image/photo03.jpg" alt="" title="" /></div>
+                <div class="detail">
+                    <h3>This is h3 tag for course</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable</p>
+                    <span>Price : 333$</span>
+                </div>
+            </div>
+            <div class="course">
+                <div class="photo"><img src="../Image/photo04.jpg" alt="" title="" /></div>
+                <div class="detail">
+                    <h3>This is h3 tag for course</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable</p>
+                    <span>Price : 333$</span>
+                </div>
+            </div>
+            <div class="course">
+                <div class="photo"><img src="../Image/photo05.jpg" alt="" title="" /></div>
+                <div class="detail">
+                    <h3>This is h3 tag for course</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable</p>
+                    <span>Price : 333$</span>
+                </div>
+            </div>
+        </div>
+        <div class="view-more"><button><a href="#">View All</a></button></div>
+    </section>
+    <div class="width">
+        <section class=" learning" id="deals">
+            <div class="photo"><img src="../Image/photo01.jpg" /></div>
+            <div class="detail">
+                <h3>Explore The elearning Institute </h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                    of Lorem Ipsum, you need to be sure.</p>
+                <p>Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
+                <ul>
+                    <li><span>300K+</span> Online Course</li>
+                    <li><span>300K+</span> Expert member</li>
+                    <li><span>300K+</span> Rating & Review</li>
+                </ul>
+                <button><a href="#">Read More</a></button>
+            </div>
+        </section>
+    </div>
+    <div class="width">
+        <section class="registration" id="register">
+            <div>
+                <h3>Ready to join? </h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div><button><a href="#">Register Now</a></button></div>
+        </section>
+    </div>
+    <section class="width achievement" id="success">
+        <h2>Meet Our Successfull Students</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <div class="container">
+            <div class="profile">
+                <div class="photo"><img src="../Image/photo00.jpg" /></div>
+                <h4>Name of Peope</h4>
+                <span>Position</span>
+            </div>
+            <div class="profile">
+                <div class="photo"><img src="../Image/photo01.jpg" /></div>
+                <h4>Name of Peope</h4>
+                <span>Position</span>
+            </div>
+            <div class="profile">
+                <div class="photo"><img src="../Image/photo02.jpg" /></div>
+                <h4>Name of Peope</h4>
+                <span>Position</span>
+            </div>
+            <div class="profile">
+                <div class="photo"><img src="../Image/photo03.jpg" /></div>
+                <h4>Name of Peope</h4>
+                <span>Position</span>
+            </div>
+        </div>
+        <div class="view-more"><button><a href="#">View All</a></button></div>
+    </section>
+    <section class="width feedbacks">
+        <h2>Some Students Feedback</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <div class="container">
+            <div class="feedback">
+                <div><i class="bi bi-quote"></i></div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                    of Lorem. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <div class="profile">
+                    <div class="photo"><img src="../Image/photo02.jpg" /></div>
+                    <div><span>Awlad Hossain</span><span>UI Designer</span></div>
+                </div>
+                <ul class="rate">
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-half"></i></li>
+                    <li><i class="bi bi-star"></i></li>
+                </ul>
+            </div>
+            <div class="feedback">
+                <div><i class="bi bi-quote"></i></div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                    of Lorem. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <div class="profile">
+                    <div class="photo"><img src="../Image/photo03.jpg" /></div>
+                    <div><span>Shanta Akter</span><span>Graphic Designer</span></div>
+                </div>
+                <ul class="rate">
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-half"></i></li>
+                    <li><i class="bi bi-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="view-more"><button><a href="#">View All</a></button></div>
+    </section>
+    <section class="width questions">
+        <h2>Frequently Asked Questions</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <ul class="container">
+            <li class="click">
+                <h3>What is the difference between flex and grid? <span><i class="bi bi-chevron-down"></i></span></h3>
+                <div>Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns
+                    at the same time.</div>
+            </li>
+            <li>
+                <h3>What is the difference between flex and grid? <span><i class="bi bi-chevron-down"></i></span></h3>
+                <div>Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns
+                    at the same time.</div>
+            </li>
+            <li>
+                <h3>What is the difference between flex and grid? <span><i class="bi bi-chevron-down"></i></span></h3>
+                <div>Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns
+                    at the same time.</div>
+            </li>
+            <li>
+                <h3>What is the difference between flex and grid? <span><i class="bi bi-chevron-down"></i></span></h3>
+                <div>Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns
+                    at the same time.</div>
+            </li>
+        </ul>
+    </section>
+    <section class="width company">
+        <h2>Trusted by over 800+ companies</h2>
+        <ul>
+            <li><img src="../Image/photo04.jpg" /></li>
+            <li><img src="../Image/photo04.jpg" /></li>
+            <li><img src="../Image/photo04.jpg" /></li>
+            <li><img src="../Image/photo04.jpg" /></li>
+            <li><img src="../Image/photo04.jpg" /></li>
+            <li><img src="../Image/photo04.jpg" /></li>
+        </ul>
+    </section>
+    <footer>
+        <h2>Code learning</h2>
+        <address>Office 41, Zawaya Buildin, Ghala Muscat, Sultanate of Oman</address>
+        <ul class="menu">
+            <li><a href="#">Home</a></li> |
+            <li><a href="#">Terms and Conditin</a></li> |
+            <li><a href="#">Privacy</a></li> |
+            <li><a href="#">Disclaimer</a></li>
+        </ul>
+        <ul class="social-media">
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script>
+        $('.menu-controlar').click(() => {
+            $('.main-menu').css('padding-top', '5px').slideToggle(300);
+        });
+
+        $('.questions li> h3').click(function() {
+            $('.questions li> h3').css({
+                'border': 'none',
+                'border-bottom': '1px solid rgb(209, 209, 209)'
+            });
+            $('.questions li:last-child>h3').css('border-bottom', 'none');
+            $(this).css('border', '3px solid red');
+            $(this).next().slideToggle(300);
+            $(this).parent().toggleClass('click');
+        });
+    </script>
+</body>
+
+</html>

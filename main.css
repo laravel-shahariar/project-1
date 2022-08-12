@@ -109,9 +109,12 @@ h1 span:last-child {
 /* Main Slide Section */
 
 .main-photo-slide {
+    position: relative;
+}
+
+.main-photo-slide .container {
     display: flex;
     overflow: hidden;
-    position: relative;
 }
 
 .main-photo-slide .slide {

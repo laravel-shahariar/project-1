@@ -31,6 +31,7 @@
     </header>
     <div class="width">
         <section class="main-photo-slide">
+            <div class="container">
             <div class="slide">
                 <div class="photo"><img src="photo00.jpg" /></div>
                 <div>
@@ -62,6 +63,7 @@
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     <button><a href='#'>Get Started</a></button>
                 </div>
+            </div>
             </div>
             <div>
                 <span class="left"><i class="bi bi-chevron-left"></i></span>
@@ -271,10 +273,33 @@
         </ul>
     </footer>
     <script>
+        //menu
         $('.menu-controlar').click(() => {
             $('.main-menu').css('padding-top', '5px').slideToggle(300);
         });
 
+        //slide
+        let containerInnerWidth = $(".main-photo-slide .container").width(),
+            scrollLeftRight = 0,
+            slideLeftLength = containerInnerWidth * ($('.main-photo-slide .slide').length - 1);
+        $('.main-photo-slide .left').click(() => {
+            scrollLeftRight -= containerInnerWidth;
+            if (scrollLeftRight < 0) scrollLeftRight = 0;
+            $('.main-photo-slide .container').animate({
+                'scrollLeft': scrollLeftRight
+            }, 500);
+            console.log(scrollLeftRight);
+        });
+        $('.main-photo-slide .right').click(() => {
+            scrollLeftRight += containerInnerWidth;
+            if (scrollLeftRight > slideLeftLength) scrollLeftRight = slideLeftLength;
+            $('.main-photo-slide .container').animate({
+                'scrollLeft': scrollLeftRight
+            }, 500);
+            console.log(scrollLeftRight);
+        });
+
+        //question
         $('.questions li> h3').click(function() {
             $('.questions li> h3').css({
                 'border': 'none',

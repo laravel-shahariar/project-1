@@ -36,7 +36,6 @@ button:hover {
 
 
 /* Header */
-
 header {
     background-color: rgb(230, 230, 230);
     padding: 10px;
@@ -121,6 +120,7 @@ h1 span:last-child {
     width: 100%;
     min-width: 100%;
     position: relative;
+    transition: 0.5s;
 }
 
 .main-photo-slide .slide .photo {
@@ -167,6 +167,7 @@ h1 span:last-child {
 .main-photo-slide div:last-child span {
     position: absolute;
     top: 50%;
+    z-index: 1;
     transform: translateY(-50%);
     color: white;
     font-size: 30px;
@@ -179,6 +180,54 @@ h1 span:last-child {
 
 .main-photo-slide div:last-child .right {
     right: 50px;
+}
+
+#slide2 .container {
+    position: relative;
+}
+
+
+/* Slide 2 */
+
+.main-photo-slide .active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.main-photo-slide .active2 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    animation: ACTIVE2 0.5s forwards;
+}
+
+.main-photo-slide .active3 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    animation: ACTIVE2 0.5s forwards;
+}
+
+@keyframes ACTIVE1 {
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes ACTIVE2 {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes ACTIVE3 {
+    100% {
+        left: 100%;
+    }
 }
 
 
@@ -209,6 +258,7 @@ h1 span:last-child {
     border-radius: 5px;
     margin: 10px 0;
     float: left;
+    overflow: hidden;
 }
 
 .courses .course:nth-child(odd) {
@@ -226,7 +276,7 @@ h1 span:last-child {
 }
 
 .courses .course .detail {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .courses .course .detail h3 {
@@ -420,7 +470,6 @@ h1 span:last-child {
 
 
 /* Feedback Section */
-
 .feedbacks>h2 {
     text-align: center;
     margin-bottom: 15px;
@@ -640,13 +689,16 @@ footer .social-media a {
         max-width: 1200px;
         padding: 0 30px;
     }
+
     .courses .course {
         height: 180px;
     }
+
     .courses .course .photo {
         min-width: 180px;
         width: 180px;
     }
+
     .learning {
         height: 650px;
     }
@@ -657,31 +709,38 @@ footer .social-media a {
         max-width: 991px;
         padding: 0 25px;
     }
+
     .main-menu li {
         margin: 5px 15px;
     }
+
     .courses .course {
         height: 150px;
     }
+
     .courses .course .photo {
         min-width: 150px;
         width: 150px;
     }
+
     .learning {
         height: 550px;
     }
 }
 
 @media (max-width:991px) {
+
     /*  */
     .width {
         max-width: 767px;
         padding: 0 15px;
     }
+
     header>div>div {
         display: block;
         position: relative;
     }
+
     .menu-controlar {
         display: block;
         position: absolute;
@@ -692,71 +751,89 @@ footer .social-media a {
         border: 0.5px solid gray;
         border-radius: 5px;
     }
+
     .main-menu {
         display: none;
     }
+
     .main-menu li {
         display: block;
     }
+
     .reg {
         display: none;
     }
+
     /*  */
     .courses .course {
         width: 100%;
         height: 200px;
         float: none;
     }
+
     .courses .course:nth-child(odd) {
         margin-right: 0;
     }
+
     .courses .course:nth-child(4),
     .courses .course:nth-child(5),
     .courses .course:nth-child(6) {
         display: none;
     }
+
     .courses .course .photo {
         min-width: 200px;
         width: 200px;
     }
+
     .courses .course .detail {
         padding: 40px;
     }
+
     /*  */
     .learning {
         height: 500px;
     }
+
     .learning .detail p:nth-child(3) {
         display: none;
     }
+
     /*  */
     .achievement .container {
         display: block;
         overflow: hidden;
     }
+
     .achievement .profile {
         float: left;
         min-width: calc(50% - 7.5px);
         width: calc(50% - 7.5px);
     }
+
     .achievement .profile:nth-child(odd) {
         margin-right: 15px;
     }
+
     .achievement .profile:nth-child(1),
     .achievement .profile:nth-child(2) {
         margin-bottom: 15px;
     }
+
     .achievement .view-more {
         display: none;
     }
+
     /*  */
     .feedbacks .container {
         display: block;
     }
+
     .feedbacks .feedback {
         width: 100%;
         margin-bottom: 15px;
     }
+
     /*  */
     .company {
         display: none;
@@ -768,113 +845,140 @@ footer .social-media a {
         max-width: 576px;
         padding: 0 10px;
     }
+
     /*  */
     .main-photo-slide .slide div:last-child h2 {
         font-size: 30px;
     }
+
     /*  */
     .courses .course {
         display: block;
         height: auto;
         margin: 15px 0;
     }
+
     .courses .course .photo {
         min-width: 100%;
         width: 100%;
     }
+
     .courses .course .detail {
         padding: 15px;
     }
+
     /*  */
     .learning {
         height: auto;
         display: block;
     }
+
     .learning .photo {
         min-width: 100%;
         width: 100%;
     }
+
     .learning .detail h3 {
         font-size: 30px;
         margin-bottom: 20px;
     }
+
     .learning .detail p:nth-child(3) {
         display: block;
     }
+
     .learning .detail li span {
         font-size: 30px;
     }
+
     /*  */
     .registration {
         display: block;
     }
+
     .registration div:first-child,
     .registration div:last-child {
         width: 100%;
         text-align: center;
     }
+
     .registration button {
         margin-top: 15px;
     }
+
     /*  */
     .achievement>h2,
     .achievement>p {
         text-align: center;
     }
+
     .achievement .profile {
         min-width: 100%;
         width: 100%;
         float: none;
         margin-bottom: 15px;
     }
+
     .achievement .profile:nth-child(odd) {
         margin-right: 0;
     }
+
     .achievement .profile:nth-child(1),
     .achievement .profile:nth-child(2) {
         margin-bottom: 15px;
     }
+
     .achievement .profile .photo {
         height: auto;
     }
+
     .achievement .profile .photo img {
         height: auto;
     }
+
     .achievement .view-more {
         display: block;
     }
 }
 
 @media (max-width:576px) {
-     :root {
+    :root {
         --fontSize01: 25px;
     }
+
     .width {
         max-width: 100%;
         padding: 0 10px;
     }
+
     /*  */
     .main-photo-slide .slide div:last-child h2 {
         font-size: 20px;
     }
+
     .main-photo-slide .slide div:last-child p {
         font-size: 12px;
         line-height: 15px;
     }
+
     .main-photo-slide div:last-child .left {
         left: 20px;
     }
+
     .main-photo-slide div:last-child .right {
         right: 20px;
     }
+
     /*  */
     .courses>p {
         font-size: 14px;
     }
+
     /*  */
     .learning .detail h3 {
         font-size: 30px;
     }
+
     .learning .detail p {
         margin: 25px 0;
     }

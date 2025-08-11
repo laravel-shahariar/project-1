@@ -43,9 +43,6 @@ header {
 
 header .width {
     margin: 0 auto;
-}
-
-header>div>div {
     display: flex;
     justify-content: space-between;
 }
@@ -67,23 +64,15 @@ h1 span:last-child {
     display: none;
 }
 
-.main-menu ul {
-    list-style-type: none;
-}
-
-.main-menu li {
-    display: inline-block;
-    margin: 5px 20px;
-}
-
-.main-menu li:not(:first-child) {
-    opacity: 0.5;
-}
-
 .main-menu a {
     display: inline-block;
     color: black;
     padding: 10px;
+    margin: 5px 20px;
+}
+
+.main-menu a:not(:first-child) {
+    opacity: 0.5;
 }
 
 .reg {
@@ -93,20 +82,19 @@ h1 span:last-child {
 .reg a {
     display: inline-block;
     padding: 10px;
-    color: skyblue;
-    border: 1px solid skyblue;
+    color: rgb(0, 183, 255);
+    border: 1px solid rgb(0, 183, 255);
     border-radius: 5px;
     transition: 0.3s;
 }
 
 .reg a:hover {
-    background-color: skyblue;
+    background-color: rgb(0, 183, 255);
     color: white;
 }
 
 
 /* Main Slide Section */
-
 .main-photo-slide {
     position: relative;
 }
@@ -684,6 +672,9 @@ footer .social-media a {
     font-size: 14px;
 }
 
+
+
+/* ! Responsive max */
 @media (max-width:1400px) {
     .width {
         max-width: 1200px;
@@ -710,7 +701,7 @@ footer .social-media a {
         padding: 0 25px;
     }
 
-    .main-menu li {
+    .main-menu a {
         margin: 5px 15px;
     }
 
@@ -730,13 +721,12 @@ footer .social-media a {
 
 @media (max-width:991px) {
 
-    /*  */
+    /* header */
     .width {
         max-width: 767px;
         padding: 0 15px;
     }
-
-    header>div>div {
+    header .width {
         display: block;
         position: relative;
     }
@@ -745,19 +735,22 @@ footer .social-media a {
         display: block;
         position: absolute;
         top: 0;
-        right: 0;
-        font-size: 27px;
+        right: 10px;
+        font-size: 25px;
         cursor: pointer;
         border: 0.5px solid gray;
         border-radius: 5px;
+        padding: 0 5px;
     }
 
     .main-menu {
         display: none;
     }
 
-    .main-menu li {
+    .main-menu a {
         display: block;
+        margin: 20px 0;
+        padding: 0;
     }
 
     .reg {
@@ -948,7 +941,7 @@ footer .social-media a {
 
     .width {
         max-width: 100%;
-        padding: 0 10px;
+        margin: 20px 0 40px;
     }
 
     /*  */
